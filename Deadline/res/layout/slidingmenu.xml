@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sp="http://schemas.android.com/apk/res/com.example.deadline"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#87CEFF"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ImageButton
+                android:id="@+id/imageMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@android:drawable/ic_dialog_dialer" />
+
+            <ImageButton
+                android:id="@+id/imageAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageMenuButton"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@android:drawable/ic_input_add" />
+
+            <com.example.deadline.SwipeListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imageMenuButton"
+                android:background="#fff4f7f9"
+                android:cacheColorHint="#00000000"
+                android:divider="#dddbdb"
+                android:dividerHeight="1dp"
+                sp:right_width="120dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

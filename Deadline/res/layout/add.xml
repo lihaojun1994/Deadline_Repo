@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    	<ImageButton
+        	android:id="@+id/imageButton1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:src="@android:drawable/ic_input_delete" />
+
+    	<Button
+    	    android:id="@+id/button"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_alignParentRight="true"
+    	    android:text="确认" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    	<TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题:"
+            android:textSize="35px"/>"
+    	<EditText
+        	android:id="@+id/editText1"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:ems="10" >
+        	<requestFocus />
+    	</EditText>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    	<TextView
+        	android:id="@+id/textview2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="备注:"
+        	android:textSize="35px"/>"
+    	<EditText
+        	android:id="@+id/editText2"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:ems="10"/>
+	</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView android:id="@+id/spinnerText1"  
+            android:layout_width="fill_parent"   
+            android:layout_height="wrap_content"/>
+  		<Spinner android:id="@+id/Spinner1"   
+           android:layout_width="fill_parent"  
+           android:layout_height="wrap_content"/>
+  		
+  		<TextView android:id="@+id/spinnerText2"  
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+  		<Spinner android:id="@+id/Spinner2"   
+           android:layout_width="fill_parent"  
+           android:layout_height="wrap_content"/>
+    </LinearLayout>
+    
+    
+    <Button
+        android:id="@+id/date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="选择完成日期" />
+    <Button
+        android:id="@+id/time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="设置提醒时间" />
+
+    <TextView
+        android:id="@+id/textview_boolean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="35px"/>"
+    
+    <TextView
+        android:id="@+id/textview_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="35px"/>"
+      
+    <TextView
+        android:id="@+id/textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="35px"/>"
+</LinearLayout>
